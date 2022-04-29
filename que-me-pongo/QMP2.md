@@ -25,7 +25,7 @@ class Tipo
     method categoria()
         return this.categoria
 
-Enum Categoria
+enum Categoria
 	PARTE_SUPERIOR, CALZADO, PARTE_INFERIOR, ACCESORIOS
 
 enum Material
@@ -87,29 +87,29 @@ class SanJuan inherits Institucion
         return borrador.crearPrenda()
     
     method fabricarPrendaInferior()
-        borrador = new Borrador(PANTALON)
+        borrador = new Borrador(tipo.PANTALON)
         borrador.setMaterial(ACETATO)
         borrador.setColorPrincipal(new Color(r,g,b))
         return borrador.crearPrenda()
 
     method fabricarCalzado()
-        borrador = new Borrador(ZAPATILLAS)
+        borrador = new Borrador(tipo.ZAPATILLAS)
         borrador.setColorPrincipal(new Color(r,g,b))
         return borrador.crearPrenda()
         
 class Johnson inherits Institucion
     method fabricarPrendaSuperior()
-        borrador = new Borrador(CAMISA)
+        borrador = new Borrador(tipo.CAMISA)
         borrador.setColorPrincipal(new Color(r,g,b))
         return borrador.crearPrenda()
     
     method fabricarPrendaInferior()
-        borrador = new Borrador(PANTALON)
+        borrador = new Borrador(tipo.PANTALON)
         borrador.setColorPrincipal(new Color(r,g,b))
         return borrador.crearPrenda()
 
     method fabricarCalzado()
-        borrador = new Borrador(ZAPATOS)
+        borrador = new Borrador(tipo.ZAPATOS)
         borrador.setColorPrincipal(new Color(r,g,b))
         return borrador.crearPrenda()    
 ~~~
